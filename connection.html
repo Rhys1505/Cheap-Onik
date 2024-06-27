@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap_Onik/Login</title>
+    <link rel="stylesheet" href="style-connection.css">    
+    <link rel="icon" type="image/png" href="Images/Logo.png">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Cheap_Onik_rent4all-removebg-preview.png" class="Logo">
+
+                <ul>
+                    <li><a href="Acceuil.html">Acceuil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="connection.html">Se connecter</a></li>
+                    <li><a href="à-propos.html">A propos de nous</a></li>
+                </ul>
+
+            </nav>
+    
+                <div class="formulaire">
+                    <div class="bouttons-box">
+                        <div id="bouttons"></div>                       
+                         <button type="button" class="switch-bouttons" onclick="connecter()">Se connecter</button>
+
+                        <button type="button" class="switch-bouttons" onclick="enregistrer()">S'enregistrer</button>
+
+                    </div>
+                    <div>
+                        <form id= "connecter" class="input-groupe">
+                            <input type="text" class="input" placeholder="Identifiant" required>
+                            <input type="text" class="input" placeholder="Mot de passe" required>
+                            <button type="submit" class="submit">Se connecter</button>
+
+                        </form>
+                        <form id="enregistrer" class="input-groupe">
+                            <input type="text" class="input" placeholder="Identifiant" required>
+                            <input type="email" class="input" placeholder="Email" required>
+                            <input type="text" class="input" placeholder="Mot de passe" required>
+                            <button type="submit" class="submit">S'enregistrer</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            <div>
+           
+                
+        </div>
+
+        <script>
+
+            var x = document.getElementById("connecter")
+            var y = document.getElementById("enregistrer")
+            var z = document.getElementById("bouttons")
+
+            function enregistrer(){
+                x.style.left = "-1330px"
+                y.style.left = "120px"
+                z.style.left = "340px"
+            }
+            function connecter(){
+                x.style.left = "120px"
+                y.style.left = "1330px"
+                z.style.left = "0"
+            }
+
+        </script>
+    
+</body>
+</html>
+
